@@ -1,0 +1,89 @@
+<!-- <div style="text-align:center; padding: 20px; background-color: white; color: green;">
+    <h1>Bem-vindo!</h1>
+    <form>
+      <label for="username">Nome de usuário:</label><br>
+      <input type="text" id="username" name="username"><br>
+      <label for="password">Senha:</label><br>
+      <input type="password" id="password" name="password"><br><br>
+      <input type="submit" value="Entrar">
+    </form>
+  </div>   -->
+
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Login - Lista Orgânica</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              background-color: #f0f8ea;
+              margin: 0;
+              padding: 0;
+          }
+  
+          .login-container {
+              max-width: 400px;
+              margin: 0 auto;
+              padding: 20px;
+              background-color: #ffffff;
+              border-radius: 5px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+  
+          .logo {
+              text-align: center;
+              margin-bottom: 20px;
+          }
+  
+          .logo h1 {
+              color: #4caf50;
+          }
+  
+          .form-group {
+              margin-bottom: 15px;
+          }
+  
+          .form-group input {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 3px;
+          }
+  
+          .form-group button {
+              width: 100%;
+              padding: 10px;
+              background-color: #4caf50;
+              color: #ffffff;
+              border: none;
+              border-radius: 3px;
+              cursor: pointer;
+          }
+  
+          .form-group button:hover {
+              background-color: #45a049;
+          }
+      </style>
+  </head>
+  <body>
+      <div class="login-container">
+          <div class="logo">
+              <h1>Lista Orgânica</h1>
+          </div>
+          <form (submit)="login()">
+              <div class="form-group">
+                  <input type="text" placeholder="Usuário" [(ngModel)]="username" name="username">
+              </div>
+              <div class="form-group">
+                  <input type="password" placeholder="Senha" [(ngModel)]="password" name="password">
+              </div>
+              <div class="form-group">
+                  <button type="submit">Entrar</button>
+              </div>
+          </form>
+      </div>
+  </body>
+  </html>
+  
